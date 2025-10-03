@@ -2,4 +2,4 @@
 logs
 vmpf
 data
-custom_code/__pycache__/
+__pycache__
