@@ -4,6 +4,7 @@ light_settings:
   default_fade_ms: 50
 
 lights:
+  #Controlled Lights
   l_shoot_again:
     start_channel: 1-0-0
     subtype: led
@@ -223,6 +224,133 @@ lights:
       polarity: true
   l_ball_5:
     start_channel: 1-0-31
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  #GI Lights
+  l_gi_ul_1:
+    start_channel: 1-1-01
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_ul_2:
+    start_channel: 1-1-02
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_lane_1:
+    start_channel: 1-1-03
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_lane_2:
+    start_channel: 1-1-04
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_lane_3:
+    start_channel: 1-1-05
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_lane_4:
+    start_channel: 1-1-06
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_ur_1:
+    start_channel: 1-1-07
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_special:
+    start_channel: 1-1-08
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_mr_1:
+    start_channel: 1-1-09
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_mr_2:
+    start_channel: 1-1-10
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_lr_1:
+    start_channel: 1-1-11
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_lr_2:
+    start_channel: 1-1-12
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_ll_1:
+    start_channel: 1-1-13
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_ll_2:
+    start_channel: 1-1-14
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_ml_1:
+    start_channel: 1-1-15
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_pop_left:
+    start_channel: 1-1-16
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_pop_center:
+    start_channel: 1-1-17
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_gi_pop_right:
+    start_channel: 1-1-18
     subtype: led
     type: w
     fade_ms: 50ms

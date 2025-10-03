@@ -1,0 +1,42 @@
+#show_version=6
+
+- duration: 250ms
+  lights:
+    l_gi_ul_1: on
+    l_gi_ul_2: on
+    l_gi_lane_1: on
+    l_gi_lane_2: on
+    l_gi_lane_3: on
+    l_gi_lane_4: on
+    l_gi_ur_1: on
+    l_gi_special: on
+    l_gi_mr_1: on
+    l_gi_mr_2: on
+    l_gi_lr_1: on
+    l_gi_lr_2: on
+    l_gi_ll_1: on
+    l_gi_ll_2: on
+    l_gi_ml_1: on
+    l_gi_pop_left: on
+    l_gi_pop_center: on
+    l_gi_pop_right: on
+- duration: 250ms
+  lights:
+    l_gi_ul_1: off
+    l_gi_ul_2: off
+    l_gi_lane_1: off
+    l_gi_lane_2: off
+    l_gi_lane_3: off
+    l_gi_lane_4: off
+    l_gi_ur_1: off
+    l_gi_special: off
+    l_gi_mr_1: off
+    l_gi_mr_2: off
+    l_gi_lr_1: off
+    l_gi_lr_2: off
+    l_gi_ll_1: off
+    l_gi_ll_2: off
+    l_gi_ml_1: off
+    l_gi_pop_left: off
+    l_gi_pop_center: off
+    l_gi_pop_right: off

@@ -11,6 +11,8 @@ shots:
     switch: s_slingshot_left
   shot_slingshot_right:
     switch: s_slingshot_right
+  shot_10pt_su_drops:
+    switch: s_10pt_su_drops
 
 variable_player:
   shot_10pt_su_hit:
@@ -19,3 +21,6 @@ variable_player:
     score: 10
   shot_slingshot_right_hit:
     score: 10
+  shot_10pt_su_drops_hit:
+    score: 10
+    bonus_val: 1

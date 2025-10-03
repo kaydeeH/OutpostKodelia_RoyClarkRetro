@@ -6,6 +6,7 @@ mode:
   events_when_started: base_is_setup
 
 show_player:
+  mode_base_started: base_gi_show
   mode_base_started{ball==1}: ball1
   mode_base_started{ball==2}: ball2
   mode_base_started{ball==3}: ball3
@@ -174,6 +175,7 @@ shows:
       lights:
         l_bonus_10: on
 
+#This can't live in the 'bonus' mode because it's not running when the player tilts.
 variable_player:
   tilt:
     bonus_val:

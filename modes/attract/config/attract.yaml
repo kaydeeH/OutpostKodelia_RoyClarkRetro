@@ -47,4 +47,4 @@ segment_display_player:
       key: attr
 
 show_player:
-  attract_init_done: attract_bonus_show, attract_bonus_mult_show, attract_misc_show, attract_drops_show, attract_game_over_show
+  attract_init_done: attract_bonus_show, attract_bonus_mult_show, attract_misc_show, attract_drops_show, attract_game_over_show, attract_gi_show

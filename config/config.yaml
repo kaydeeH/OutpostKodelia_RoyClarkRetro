@@ -2,7 +2,6 @@
 
 #Clean up / customize /implement settings
 #Add chime sounds throughout
-#Add GI as lights so I can flash the PF during tilts and do other interesting things with the GI.
 
 config:
   - assets.yaml

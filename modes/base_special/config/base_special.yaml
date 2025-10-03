@@ -25,6 +25,7 @@ variable_player:
       action: set
   shot_special_hit:
     score: 500
+    bonus_val: 1
   shot_special_hit{current_player.special_ready==1}:
     score: 50000
     special_ready:
@@ -46,7 +47,6 @@ variable_player:
     special_ready:
       int: 0
       action: set
-
 
 event_player:
   target_group_ab_collected_full{current_player.group_cd_special_ready==1}: special_ready

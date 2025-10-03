@@ -64,6 +64,8 @@ switches:
     number:
   s_10pt_su:
     number:
+  s_10pt_su_drops:
+    number:
   s_ro_top_1:
     number:
     tags: playfield_active
