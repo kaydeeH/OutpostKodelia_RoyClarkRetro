@@ -25,6 +25,10 @@ variable_player:
     extra_ball_ready:
       int: 1
       action: set
+  tilt:
+    extra_ball_ready:
+      int: 0
+      action: set
 
 show_player:
   extra_ball_ready: extra_lit

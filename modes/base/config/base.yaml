@@ -173,3 +173,12 @@ shows:
     - duration: 100ms
       lights:
         l_bonus_10: on
+
+variable_player:
+  tilt:
+    bonus_val:
+      int: 0
+      action: set
+    bonus_multiplier:
+      int: 0
+      action: set

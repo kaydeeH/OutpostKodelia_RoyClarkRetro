@@ -21,6 +21,7 @@ class AllDropWatcher(CustomCode):
         self.machine.events.add_handler('shot_drop_c_hit_twice_hit', self._register_c_thrice)
         self.machine.events.add_handler('shot_drop_d_hit_twice_hit', self._register_d_thrice)
         self.machine.events.add_handler('finish_up_bonus', self._reset_all)
+        self.machine.events.add_handler('tilt', self._reset_all)
 
     def _register_a_once(self, **kwargs):
         del kwargs

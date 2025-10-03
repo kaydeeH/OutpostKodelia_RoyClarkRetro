@@ -1,8 +1,6 @@
 #config_version=6
 
-#Figure out and implement Extra Ball
 #Clean up / customize /implement settings
-#Add/adjust tilt logic
 #Add chime sounds throughout
 #Add GI as lights so I can flash the PF during tilts and do other interesting things with the GI.
 
@@ -34,9 +32,8 @@ modes:
   - credits
   - high_score
   - bonus
-#  - match
   - tilt
-# base scoring modes
+# additional modes
   - base_pops
   - base_rollovers
   - base_standups

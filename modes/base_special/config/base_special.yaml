@@ -36,6 +36,17 @@ variable_player:
     group_cd_special_ready:
       int: 0
       action: set
+  tilt:
+    group_ab_special_ready:
+      int: 0
+      action: set
+    group_cd_special_ready:
+      int: 0
+      action: set
+    special_ready:
+      int: 0
+      action: set
+
 
 event_player:
   target_group_ab_collected_full{current_player.group_cd_special_ready==1}: special_ready
