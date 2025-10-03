@@ -1,0 +1,111 @@
+#config_version=6
+hardware:
+  segment_displays: light_segment_displays
+
+segment_displays:
+  display_p1:
+    size: 6
+    number: 1
+    default_transition_update_hz: 24
+  display_p2:
+    size: 6
+    number: 1
+    default_transition_update_hz: 24
+  display_credit:
+    size: 2
+    number: 1
+    default_transition_update_hz: 24
+
+# The remainder of this file sets up the screen display version of segment displays w/ backglass
+virtual_segment_display_connector:
+  segment_displays: display_p1, display_p2, display_credit
+
+widgets:
+  backglass:
+    - type: image
+      image: display_area
+      z: 1
+  display_p1:
+    - type: segment_display_emulator
+      name: display_p1
+      display_type: 7seg
+      character_count: 6
+      padding: 0
+      character_spacing: 10
+      segment_width: 0.1
+      segment_interval: .02
+      segment_off_color: ffffffff
+      segment_on_color: 000000ff
+      side_bevel_enabled: false
+      background_color: ffffffff
+      dot_enabled: false
+      comma_enabled: false
+      text: "888888"
+      width: 185
+      height: 25
+      x: 385
+      y: 248
+      z: 200
+  display_p2:
+    - type: segment_display_emulator
+      name: display_p2
+      display_type: 7seg
+      character_count: 6
+      padding: 0
+      character_spacing: 10
+      segment_width: 0.1
+      segment_interval: .02
+      segment_off_color: ffffffff
+      segment_on_color: 000000ff
+      side_bevel_enabled: false
+      background_color: ffffffff
+      dot_enabled: false
+      comma_enabled: false
+      text: "888888"
+      width: 185
+      height: 25
+      x: 770
+      y: 248
+      z: 200
+  display_credit:
+    - type: segment_display_emulator
+      name: display_credit
+      display_type: 7seg
+      character_count: 2
+      padding: 0
+      character_spacing: 10
+      segment_width: 0.1
+      segment_interval: .02
+      segment_off_color: ffffffff
+      segment_on_color: 000000ff
+      side_bevel_enabled: false
+      background_color: ffffffff
+      dot_enabled: false
+      comma_enabled: false
+      text: "88"
+      width: 43
+      height: 22
+      x: 150
+      y: 400
+      z: 200
+
+slides:
+  screen_segement_display: []
+
+slide_player:
+  displays_init_done: screen_segement_display
+
+widget_player:
+  displays_init_done:
+    backglass:
+      slide: screen_segement_display
+      priority: 10
+    display_p1:
+      slide: screen_segement_display
+      priority: 10
+    display_p2:
+      slide: screen_segement_display
+      priority: 10
+    display_credit:
+      slide: screen_segement_display
+      priority: 10

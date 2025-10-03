@@ -1,0 +1,15 @@
+#config_version=6
+
+drop_targets:
+  d_target_a:
+    switch: s_target_a
+    reset_coil: c_drop_a
+  d_target_b:
+    switch: s_target_b
+    reset_coil: c_drop_b
+  d_target_c:
+    switch: s_target_c
+    reset_coil: c_drop_c
+  d_target_d:
+    switch: s_target_d
+    reset_coil: c_drop_d

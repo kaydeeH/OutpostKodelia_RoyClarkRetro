@@ -1,0 +1,21 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+shots:
+  shot_10pt_su:
+    switch: s_10pt_su
+  shot_slingshot_left:
+    switch: s_slingshot_left
+  shot_slingshot_right:
+    switch: s_slingshot_right
+
+variable_player:
+  shot_10pt_su_hit:
+    score: 10
+  shot_slingshot_left_hit:
+    score: 10
+  shot_slingshot_right_hit:
+    score: 10

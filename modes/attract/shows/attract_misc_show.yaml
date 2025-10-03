@@ -1,0 +1,10 @@
+#show_version=6
+
+- duration: 250ms
+  lights:
+    l_extraball_wl: on
+    l_shoot_again: off
+- duration: 250ms
+  lights:
+    l_extraball_wl: off
+    l_shoot_again: on

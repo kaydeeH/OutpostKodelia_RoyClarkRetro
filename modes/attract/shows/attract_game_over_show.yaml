@@ -1,0 +1,5 @@
+#show_version=6
+
+- duration: 250ms
+  lights:
+    l_game_over: on

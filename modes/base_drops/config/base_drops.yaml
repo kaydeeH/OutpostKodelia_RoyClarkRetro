@@ -1,0 +1,142 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+shot_profiles:
+  drops_profile:
+    states:
+      - name: unhit
+      - name: hit_once
+      - name: hit_twice
+
+shots:
+  shot_drop_a:
+    switch: s_target_a
+    profile: drops_profile
+  shot_drop_b:
+    switch: s_target_b
+    profile: drops_profile
+  shot_drop_c:
+    switch: s_target_c
+    profile: drops_profile
+  shot_drop_d:
+    switch: s_target_d
+    profile: drops_profile
+
+shot_groups:
+  all_drops:
+    shots: shot_drop_a, shot_drop_b, shot_drop_c, shot_drop_d
+
+variable_player:
+  shot_drop_a_hit:
+    score: 500
+    group_ab_value: 1
+  shot_drop_b_hit:
+    score: 500
+    group_ab_value: 1
+  shot_drop_c_hit:
+    score: 500
+    group_cd_value: 1
+  shot_drop_d_hit:
+    score: 500
+    group_cd_value: 1
+  all_drops_hit_once_complete:
+    bonus_multiplier:
+      int: 2
+      action: set
+  all_drops_hit_twice_complete:
+    bonus_multiplier:
+      int: 3
+      action: set
+  finish_up_bonus:
+    bonus_multiplier:
+      int: 1
+      action: set
+    group_ab_value:
+      int: 0
+      action: set
+    group_cd_value:
+      int: 0
+      action: set
+  player_group_ab_value{value>4}:
+    group_ab_value:
+      int: 4
+      action: set
+  player_group_cd_value{value>4}:
+    group_cd_value:
+      int: 4
+      action: set
+
+show_player:
+  player_bonus_multiplier{value==2 and change>0}: multiplier2
+  player_bonus_multiplier{value==3}: multiplier3
+  player_bonus_multiplier{value==2 and change<0}:
+    multiplier3:
+      action: stop
+  player_bonus_multiplier{value==1 and change<0}:
+    multiplier2:
+      action: stop
+  player_group_ab_value{value==1}: group_ab_1
+  player_group_ab_value{value==2}: group_ab_2
+  player_group_ab_value{value==3}: group_ab_3
+  player_group_ab_value{value==4 and change>0}: group_ab_4
+  player_group_cd_value{value==1}: group_cd_1
+  player_group_cd_value{value==2}: group_cd_2
+  player_group_cd_value{value==3}: group_cd_3
+  player_group_cd_value{value==4 and change>0}: group_cd_4
+
+shows:
+  multiplier2:
+    - duration: 100ms
+      lights:
+        l_double_bonus: on
+  multiplier3:
+    - duration: 100ms
+      lights:
+        l_triple_bonus: on
+  group_ab_1:
+    - duration: 100ms
+      lights:
+        l_collect_value_ab_1: on
+  group_ab_2:
+    - duration: 100ms
+      lights:
+        l_collect_value_ab_1: on
+        l_collect_value_ab_2: on
+  group_ab_3:
+    - duration: 100ms
+      lights:
+        l_collect_value_ab_1: on
+        l_collect_value_ab_2: on
+        l_collect_value_ab_3: on
+  group_ab_4:
+    - duration: 100ms
+      lights:
+        l_collect_value_ab_1: on
+        l_collect_value_ab_2: on
+        l_collect_value_ab_3: on
+        l_collect_value_ab_4: on
+  group_cd_1:
+    - duration: 100ms
+      lights:
+        l_collect_value_cd_1: on
+  group_cd_2:
+    - duration: 100ms
+      lights:
+        l_collect_value_cd_1: on
+        l_collect_value_cd_2: on
+  group_cd_3:
+    - duration: 100ms
+      lights:
+        l_collect_value_cd_1: on
+        l_collect_value_cd_2: on
+        l_collect_value_cd_3: on
+  group_cd_4:
+    - duration: 100ms
+      lights:
+        l_collect_value_cd_1: on
+        l_collect_value_cd_2: on
+        l_collect_value_cd_3: on
+        l_collect_value_cd_4: on

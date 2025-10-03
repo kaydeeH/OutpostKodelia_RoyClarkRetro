@@ -1,0 +1,230 @@
+#config_version=6
+
+light_settings:
+  default_fade_ms: 50
+
+lights:
+  l_shoot_again:
+    start_channel: 1-0-0
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_collect_value_ab_1:
+    start_channel: 1-0-1
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_collect_value_ab_2:
+    start_channel: 1-0-2
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_collect_value_ab_3:
+    start_channel: 1-0-3
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_collect_value_ab_4:
+    start_channel: 1-0-4
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_collect_value_cd_1:
+    start_channel: 1-0-5
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_collect_value_cd_2:
+    start_channel: 1-0-6
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_collect_value_cd_3:
+    start_channel: 1-0-7
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_collect_value_cd_4:
+    start_channel: 1-0-8
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_extraball_wl:
+    start_channel: 1-0-9
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_double_bonus:
+    start_channel: 1-0-10
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_triple_bonus:
+    start_channel: 1-0-11
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_special:
+    start_channel: 1-0-12
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_01:
+    start_channel: 1-0-13
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_02:
+    start_channel: 1-0-14
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_03:
+    start_channel: 1-0-15
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_04:
+    start_channel: 1-0-16
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_05:
+    start_channel: 1-0-17
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_06:
+    start_channel: 1-0-18
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_07:
+    start_channel: 1-0-19
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_08:
+    start_channel: 1-0-20
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_09:
+    start_channel: 1-0-21
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_bonus_10:
+    start_channel: 1-0-22
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_game_over:
+    start_channel: 1-0-23
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_tilt:
+    start_channel: 1-0-24
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_player_1:
+    start_channel: 1-0-25
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_player_2:
+    start_channel: 1-0-26
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_ball_1:
+    start_channel: 1-0-27
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_ball_2:
+    start_channel: 1-0-28
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_ball_3:
+    start_channel: 1-0-29
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_ball_4:
+    start_channel: 1-0-30
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true
+  l_ball_5:
+    start_channel: 1-0-31
+    subtype: led
+    type: w
+    fade_ms: 50ms
+    platform_settings:
+      polarity: true

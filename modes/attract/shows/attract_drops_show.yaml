@@ -1,0 +1,42 @@
+#show_version=6
+
+- duration: 250ms
+  lights:
+    l_collect_value_ab_1: on
+    l_collect_value_ab_2: off
+    l_collect_value_ab_3: off
+    l_collect_value_ab_4: off
+    l_collect_value_cd_1: on
+    l_collect_value_cd_2: off
+    l_collect_value_cd_3: off
+    l_collect_value_cd_4: off
+- duration: 250ms
+  lights:
+    l_collect_value_ab_1: off
+    l_collect_value_ab_2: on
+    l_collect_value_ab_3: off
+    l_collect_value_ab_4: off
+    l_collect_value_cd_1: off
+    l_collect_value_cd_2: on
+    l_collect_value_cd_3: off
+    l_collect_value_cd_4: off
+- duration: 250ms
+  lights:
+    l_collect_value_ab_1: off
+    l_collect_value_ab_2: off
+    l_collect_value_ab_3: on
+    l_collect_value_ab_4: off
+    l_collect_value_cd_1: off
+    l_collect_value_cd_2: off
+    l_collect_value_cd_3: on
+    l_collect_value_cd_4: off
+- duration: 250ms
+  lights:
+    l_collect_value_ab_1: off
+    l_collect_value_ab_2: off
+    l_collect_value_ab_3: off
+    l_collect_value_ab_4: on
+    l_collect_value_cd_1: off
+    l_collect_value_cd_2: off
+    l_collect_value_cd_3: off
+    l_collect_value_cd_4: on

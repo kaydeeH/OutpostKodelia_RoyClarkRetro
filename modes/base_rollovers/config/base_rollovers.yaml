@@ -1,0 +1,48 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+shots:
+  shot_ro_top_1:
+    switch: s_ro_top_1
+  shot_ro_top_2:
+    switch: s_ro_top_2
+  shot_ro_top_3:
+    switch: s_ro_top_3
+  shot_ro_top_4:
+    switch: s_ro_top_4
+  shot_ro_l:
+    switch: s_ro_l
+  shot_ro_r:
+    switch: s_ro_r
+  shot_outlane_l:
+    switch: s_outlane_l
+  shot_outlane_r:
+    switch: s_outlane_r
+
+variable_player:
+  shot_ro_top_1_hit:
+    score: 500
+  shot_ro_top_2_hit:
+    score: 1000
+    bonus_val: 1
+  shot_ro_top_3_hit:
+    score: 500
+  shot_ro_top_4_hit:
+    score: 500
+  shot_ro_l_hit:
+    score: 500
+    bonus_val: 1
+  shot_ro_r_hit:
+    score: 500
+    bonus_val: 1
+  shot_outlane_l_hit:
+    score: 500
+  shot_outlane_r_hit:
+    score: 500
+  player_bonus_val{value>10 and change>0}:
+    bonus_val:
+      int: 10
+      action: set

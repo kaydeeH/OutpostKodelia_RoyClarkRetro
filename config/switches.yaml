@@ -1,0 +1,86 @@
+#config_version=6
+
+switches:
+  s_coin:
+    number:
+  s_pop_left:
+    number:
+  s_pop_center:
+    number:
+  s_pop_right:
+    number:
+  s_slingshot_left:
+    number:
+  s_slingshot_right:
+    number:
+  s_flipper_left:
+    number:
+    tags: left_flipper
+  s_flipper_left_eos:
+    number:
+  s_flipper_right:
+    number:
+    tags: right_flipper
+  s_flipper_right_eos:
+    number:
+  s_drain:
+    number:
+  s_plunger_lane:
+    number:
+  s_start:
+    number:
+    tags: start
+  s_service_enter:
+    number:
+    tags: service_enter
+  s_service_esc:
+    number:
+    tags: service_esc
+  s_service_up:
+    number:
+    tags: service_up
+  s_service_down:
+    number:
+    tags: service_down
+  s_target_a:
+    number:
+  s_target_b:
+    number:
+  s_target_c:
+    number:
+  s_target_d:
+    number:
+  s_tilt:
+    number:
+    tags: tilt_warning
+  s_slam_tilt:
+    number:
+    tags: slam_tilt
+  s_special:
+    number:
+  s_collect_ab:
+    number:
+  s_collect_cd:
+    number:
+  s_10pt_su:
+    number:
+  s_ro_top_1:
+    number:
+    tags: playfield_active
+  s_ro_top_2:
+    number:
+    tags: playfield_active
+  s_ro_top_3:
+    number:
+    tags: playfield_active
+  s_ro_top_4:
+    number:
+    tags: playfield_active
+  s_ro_l:
+    number:
+  s_ro_r:
+    number:
+  s_outlane_l:
+    number:
+  s_outlane_r:
+    number:

@@ -1,0 +1,17 @@
+#config_version=6
+
+hardware:
+  platform: opp
+  driverboards: gen2
+
+psus:
+  default:
+    #Gives the capacitors extra time to recharge after firing a coil
+    #  and eases the load on the power supply. Doesn't affect autofire
+    #  devices like flippers, pops, slings.
+    release_wait_ms: 50
+
+playfields:
+  playfield:
+    tags: default
+    default_source_device: bd_drain

@@ -1,0 +1,21 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+shots:
+  shot_pop_left:
+    switch: s_pop_left
+  shot_pop_center:
+    switch: s_pop_center
+  shot_pop_right:
+    switch: s_pop_right
+
+variable_player:
+  shot_pop_left_hit:
+    score: 100
+  shot_pop_center_hit:
+    score: 100
+  shot_pop_right_hit:
+    score: 100

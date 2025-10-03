@@ -1,0 +1,87 @@
+#config_version=6
+
+coils:
+  c_flipper_left_power:
+    number:
+    allow_enable: true
+    default_pulse_ms: 20
+  c_flipper_left_hold:
+    number:
+    allow_enable: true
+    default_pulse_ms: 20
+  c_flipper_right_power:
+    number:
+    allow_enable: true
+    default_pulse_ms: 20
+  c_flipper_right_hold:
+    number:
+    allow_enable: true
+    default_pulse_ms: 20
+  c_drain_eject:
+    number:
+    default_pulse_ms: 20
+  c_pop_left:
+    number:
+  c_pop_center:
+    number:
+  c_pop_right:
+    number:
+  c_slingshot_left:
+    number:
+  c_slingshot_right:
+    number:
+  c_drop_a:
+    number:
+  c_drop_b:
+    number:
+  c_drop_c:
+    number:
+  c_drop_d:
+    number:
+  c_knocker:
+    number:
+    pulse_events: do_knock
+    default_pulse_ms: 20
+  c_chimes_low:
+    number:
+    pulse_events: do_chime_low
+    default_pulse_ms: 20
+  c_chimes_med:
+    number:
+    pulse_events: do_chime_med
+    default_pulse_ms: 20
+  c_chimes_high:
+    number:
+    pulse_events: do_chime_high
+    default_pulse_ms: 20
+
+autofire_coils:
+  slingshot_left:
+    coil: c_slingshot_left
+    switch: s_slingshot_left
+  slingshot_right:
+    coil: c_slingshot_right
+    switch: s_slingshot_right
+  pop_left:
+    coil: c_pop_left
+    switch: s_pop_left
+  pop_center:
+    coil: c_pop_center
+    switch: s_pop_center
+  pop_right:
+    coil: c_pop_right
+    switch: s_pop_right
+
+flippers:
+  flipper_left:
+    main_coil: c_flipper_left_power
+    hold_coil: c_flipper_left_hold
+    activation_switch: s_flipper_left
+    eos_switch: s_flipper_left_eos
+    repulse_on_eos_open: true
+  flipper_right:
+    main_coil: c_flipper_right_power
+    hold_coil: c_flipper_right_hold
+    activation_switch: s_flipper_right
+    eos_switch: s_flipper_right_eos
+    repulse_on_eos_open: true

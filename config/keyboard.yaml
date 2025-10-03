@@ -1,0 +1,89 @@
+#config_version=6
+
+keyboard:
+  1:
+    switch: s_coin
+  2:
+    switch:
+  3:
+    switch:
+  4:
+    switch: s_pop_left
+  5:
+    switch: s_pop_center
+  6:
+    switch: s_pop_right
+  7:
+    switch:
+  q:
+    switch:
+  w:
+    switch:
+  e:
+    switch:
+  r:
+    switch:
+  t:
+    switch:
+  y:
+    switch:
+  u:
+    switch:
+  i:
+    switch:
+  o:
+    switch:
+  p:
+    switch:
+  "[":
+    switch:
+  a:
+    switch:
+  s:
+    switch: s_start
+  d:
+    switch: s_drain
+  f:
+    switch: s_collect_ab
+  g:
+    switch: s_collect_cd
+  h:
+    switch: s_special
+  j:
+    switch: s_plunger_lane
+  k:
+    switch:
+  l:
+    switch: s_10pt_su
+  ";":
+    switch: s_ro_l
+  "'":
+    switch: s_ro_r
+  z:
+    switch: s_left_flipper
+  x:
+    switch: s_slingshot_left
+  c:
+    switch: s_outlane_l
+  v:
+    switch: s_ro_top_2
+  b:
+    switch: s_ro_top_3
+  n:
+    switch: s_ro_top_4
+  m:
+    switch: s_ro_top_1
+  ",":
+    switch: s_outlane_r
+  .:
+    switch: s_slingshot_right
+  /:
+    switch: s_right_flipper
+  right:
+    switch: s_service_enter
+  left:
+    switch: s_service_esc
+  up:
+    switch: s_service_up
+  down:
+    switch: s_service_down

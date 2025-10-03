@@ -1,0 +1,175 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+  events_when_started: base_is_setup
+
+show_player:
+  mode_base_started{ball==1}: ball1
+  mode_base_started{ball==2}: ball2
+  mode_base_started{ball==3}: ball3
+  mode_base_started{ball==4}: ball4
+  mode_base_started{ball==5}: ball5
+  mode_base_started{player==1}:
+    player_1:
+      action: play
+    player_2:
+      action: stop
+  mode_base_started{player==2}:
+    player_1:
+      action: stop
+    player_2:
+      action: play
+  player_bonus_val{value==1 and change>0}:
+    bonus_1:
+      action: play
+  player_bonus_val{value==0 and change<0}:
+    bonus_1:
+      action: stop
+  player_bonus_val{value==2 and change>0}:
+    bonus_2:
+      action: play
+  player_bonus_val{value==1 and change<0}:
+    bonus_2:
+      action: stop
+  player_bonus_val{value==3 and change>0}:
+    bonus_3:
+      action: play
+  player_bonus_val{value==2 and change<0}:
+    bonus_3:
+      action: stop
+  player_bonus_val{value==4 and change>0}:
+    bonus_4:
+      action: play
+  player_bonus_val{value==3 and change<0}:
+    bonus_4:
+      action: stop
+  player_bonus_val{value==5 and change>0}:
+    bonus_5:
+      action: play
+  player_bonus_val{value==4 and change<0}:
+    bonus_5:
+      action: stop
+  player_bonus_val{value==6 and change>0}:
+    bonus_6:
+      action: play
+  player_bonus_val{value==5 and change<0}:
+    bonus_6:
+      action: stop
+  player_bonus_val{value==7 and change>0}:
+    bonus_7:
+      action: play
+  player_bonus_val{value==6 and change<0}:
+    bonus_7:
+      action: stop
+  player_bonus_val{value==8 and change>0}:
+    bonus_8:
+      action: play
+  player_bonus_val{value==7 and change<0}:
+    bonus_8:
+      action: stop
+  player_bonus_val{value==9 and change>0}:
+    bonus_9:
+      action: play
+  player_bonus_val{value==8 and change<0}:
+    bonus_9:
+      action: stop
+  player_bonus_val{value==10 and change>0}:
+    bonus_10:
+      action: play
+  player_bonus_val{value==9 and change<0}:
+    bonus_10:
+      action: stop
+
+shows:
+  ball1:
+    - duration: 100ms
+      lights:
+        l_ball_1: on
+        l_ball_2: off
+        l_ball_3: off
+        l_ball_4: off
+        l_ball_5: off
+  ball2:
+    - duration: 100ms
+      lights:
+        l_ball_1: off
+        l_ball_2: on
+        l_ball_3: off
+        l_ball_4: off
+        l_ball_5: off
+  ball3:
+    - duration: 100ms
+      lights:
+        l_ball_1: off
+        l_ball_2: off
+        l_ball_3: on
+        l_ball_4: off
+        l_ball_5: off
+  ball4:
+    - duration: 100ms
+      lights:
+        l_ball_1: off
+        l_ball_2: off
+        l_ball_3: off
+        l_ball_4: on
+        l_ball_5: off
+  ball5:
+    - duration: 100ms
+      lights:
+        l_ball_1: off
+        l_ball_2: off
+        l_ball_3: off
+        l_ball_4: off
+        l_ball_5: on
+  player_1:
+    - duration: 100ms
+      lights:
+        l_player_1: on
+        l_player_2: off
+  player_2:
+    - duration: 100ms
+      lights:
+        l_player_1: off
+        l_player_2: on
+  bonus_1:
+    - duration: 100ms
+      lights:
+        l_bonus_01: on
+  bonus_2:
+    - duration: 100ms
+      lights:
+        l_bonus_02: on
+  bonus_3:
+    - duration: 100ms
+      lights:
+        l_bonus_03: on
+  bonus_4:
+    - duration: 100ms
+      lights:
+        l_bonus_04: on
+  bonus_5:
+    - duration: 100ms
+      lights:
+        l_bonus_05: on
+  bonus_6:
+    - duration: 100ms
+      lights:
+        l_bonus_06: on
+  bonus_7:
+    - duration: 100ms
+      lights:
+        l_bonus_07: on
+  bonus_8:
+    - duration: 100ms
+      lights:
+        l_bonus_08: on
+  bonus_9:
+    - duration: 100ms
+      lights:
+        l_bonus_09: on
+  bonus_10:
+    - duration: 100ms
+      lights:
+        l_bonus_10: on

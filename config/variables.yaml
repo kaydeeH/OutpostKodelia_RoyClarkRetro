@@ -1,0 +1,21 @@
+#config_version=6
+
+player_vars:
+  special_ready:
+    value_type: int
+    initial_value: 0
+  bonus_val:
+    value_type: int
+    initial_value: 0
+  bonus_multiplier:
+    value_type: int
+    initial_value: 1
+  extra_ball_ready:
+    value_type: int
+    initial_value: 0
+  group_ab_value:
+    value_type: int
+    initial_value: 0
+  group_cd_value:
+    value_type: int
+    initial_value: 0

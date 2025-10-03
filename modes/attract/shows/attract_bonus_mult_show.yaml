@@ -1,0 +1,17 @@
+#show_version=6
+
+- duration: 500ms
+  lights:
+    l_double_bonus: on
+    l_special: off
+    l_triple_bonus: off
+- duration: 500ms
+  lights:
+    l_double_bonus: off
+    l_special: on
+    l_triple_bonus: off
+- duration: 500ms
+  lights:
+    l_double_bonus: off
+    l_special: off
+    l_triple_bonus: on

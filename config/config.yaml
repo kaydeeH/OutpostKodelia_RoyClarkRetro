@@ -1,0 +1,52 @@
+#config_version=6
+config:
+  - assets.yaml
+  - coils.yaml
+  - balldevices.yaml
+  - displays.yaml
+  - hardware.yaml
+  - keyboard.yaml
+  - lights.yaml
+  - switches.yaml
+  - widgetstyles.yaml
+  - segmentdisplays.yaml
+  - credits.yaml
+  - sound.yaml
+  - settings.yaml
+  - variables.yaml
+  - droptargets.yaml
+
+modes:
+# base modules
+  - base
+  - game
+  - tilt
+  - displays
+  - service
+  - service_dmd
+  - credits
+  - high_score
+  - bonus
+#  - match
+  - tilt
+# base scoring modes
+  - base_pops
+  - base_rollovers
+  - base_standups
+  - base_drops
+
+custom_code:
+  - custom_code.bonus_counter.BonusCounter
+
+game:
+  balls_per_game: settings.balls_per_game
+  max_players: 2
+
+#TODO For production, uncomment these items.
+#logging:
+#  console:
+#    timers: none
+#    event_manager: none
+#  file:
+#    timers: none
+#    event_manager: none

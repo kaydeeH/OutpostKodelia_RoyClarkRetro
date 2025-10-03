@@ -1,0 +1,290 @@
+#show_version=6
+
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: on
+- duration: 250ms
+  lights:
+    l_bonus_02: off
+    l_bonus_03: on
+- duration: 250ms
+  lights:
+    l_bonus_03: off
+    l_bonus_04: on
+- duration: 250ms
+  lights:
+    l_bonus_04: off
+    l_bonus_05: on
+- duration: 250ms
+  lights:
+    l_bonus_05: off
+    l_bonus_06: on
+- duration: 250ms
+  lights:
+    l_bonus_06: off
+    l_bonus_07: on
+- duration: 250ms
+  lights:
+    l_bonus_07: off
+    l_bonus_08: on
+- duration: 250ms
+  lights:
+    l_bonus_08: off
+    l_bonus_09: on
+- duration: 250ms
+  lights:
+    l_bonus_09: off
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: on
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: on
+    l_bonus_03: on
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: on
+    l_bonus_03: on
+    l_bonus_04: on
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: on
+    l_bonus_03: on
+    l_bonus_04: on
+    l_bonus_05: on
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: on
+    l_bonus_03: on
+    l_bonus_04: on
+    l_bonus_05: on
+    l_bonus_06: on
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: on
+    l_bonus_03: on
+    l_bonus_04: on
+    l_bonus_05: on
+    l_bonus_06: on
+    l_bonus_07: on
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: on
+    l_bonus_03: on
+    l_bonus_04: on
+    l_bonus_05: on
+    l_bonus_06: on
+    l_bonus_07: on
+    l_bonus_08: on
+    l_bonus_09: off
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: on
+    l_bonus_03: on
+    l_bonus_04: on
+    l_bonus_05: on
+    l_bonus_06: on
+    l_bonus_07: on
+    l_bonus_08: on
+    l_bonus_09: on
+    l_bonus_10: off
+- duration: 250ms
+  lights:
+    l_bonus_01: on
+    l_bonus_02: on
+    l_bonus_03: on
+    l_bonus_04: on
+    l_bonus_05: on
+    l_bonus_06: on
+    l_bonus_07: on
+    l_bonus_08: on
+    l_bonus_09: on
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: on
+    l_bonus_03: on
+    l_bonus_04: on
+    l_bonus_05: on
+    l_bonus_06: on
+    l_bonus_07: on
+    l_bonus_08: on
+    l_bonus_09: on
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: off
+    l_bonus_03: on
+    l_bonus_04: on
+    l_bonus_05: on
+    l_bonus_06: on
+    l_bonus_07: on
+    l_bonus_08: on
+    l_bonus_09: on
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: on
+    l_bonus_05: on
+    l_bonus_06: on
+    l_bonus_07: on
+    l_bonus_08: on
+    l_bonus_09: on
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: on
+    l_bonus_06: on
+    l_bonus_07: on
+    l_bonus_08: on
+    l_bonus_09: on
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: on
+    l_bonus_07: on
+    l_bonus_08: on
+    l_bonus_09: on
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: on
+    l_bonus_08: on
+    l_bonus_09: on
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: on
+    l_bonus_09: on
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: on
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: on
+- duration: 250ms
+  lights:
+    l_bonus_01: off
+    l_bonus_02: off
+    l_bonus_03: off
+    l_bonus_04: off
+    l_bonus_05: off
+    l_bonus_06: off
+    l_bonus_07: off
+    l_bonus_08: off
+    l_bonus_09: off
+    l_bonus_10: off

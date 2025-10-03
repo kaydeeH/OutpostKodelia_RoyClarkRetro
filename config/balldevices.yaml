@@ -1,0 +1,10 @@
+#config_version=6
+
+ball_devices:
+  bd_drain:
+    ball_switches: s_drain
+    eject_coil: c_drain_eject
+    tags: drain, home, trough
+    eject_timeouts: 3s
+
+virtual_platform_start_active_switches: s_drain

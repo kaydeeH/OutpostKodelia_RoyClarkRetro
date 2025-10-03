@@ -1,0 +1,50 @@
+#config_version=6
+
+event_player:
+  mode_attract_started:
+    - attract_init_done
+
+#Toggle between last game scores and high score during attract.
+timers:
+  display_loop_timer:
+    start_value: 0
+    end_value: 6
+    tick_interval: 1s
+    restart_on_complete: true
+    direction: up
+    control_events:
+      - action: start
+        event: attract_init_done
+      - action: stop
+        event: mode_attract_will_stop
+
+segment_display_player:
+  timer_display_loop_timer_tick{ticks==2}:
+    display_p1:
+      text: "{(machine.player1_score):d}"
+      color: black
+      key: attr
+    display_p2:
+      text: "{(machine.player2_score):d}"
+      color: black
+      key: attr
+    display_credit:
+      text: "{(machine.credits_whole_num):d}"
+      color: black
+      key: attr
+  timer_display_loop_timer_tick{ticks==5}:
+    display_p1:
+      text: " HIGH "
+      color: black
+      key: attr
+    display_p2:
+      text: "{(machine.score1_value):d}"
+      color: black
+      key: attr
+    display_credit:
+      text: "{(machine.credits_whole_num):d}"
+      color: black
+      key: attr
+
+show_player:
+  attract_init_done: attract_bonus_show, attract_bonus_mult_show, attract_misc_show, attract_drops_show, attract_game_over_show
