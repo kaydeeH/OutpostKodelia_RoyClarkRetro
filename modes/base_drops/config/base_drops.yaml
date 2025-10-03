@@ -24,6 +24,10 @@ shots:
   shot_drop_d:
     switch: s_target_d
     profile: drops_profile
+  shot_collect_ab:
+    switch: s_collect_ab
+  shot_collect_cd:
+    switch: s_collect_cd
 
 shot_groups:
   all_drops:
@@ -68,6 +72,10 @@ variable_player:
     group_cd_value:
       int: 4
       action: set
+  target_group_ab_collect:
+    score: 1000
+  target_group_cd_collect:
+    score: 1000
 
 show_player:
   player_bonus_multiplier{value==2 and change>0}: multiplier2
@@ -86,6 +94,42 @@ show_player:
   player_group_cd_value{value==2}: group_cd_2
   player_group_cd_value{value==3}: group_cd_3
   player_group_cd_value{value==4 and change>0}: group_cd_4
+  target_group_ab_collect{num_remaining==3}:
+    group_ab_3:
+      action: play
+    group_ab_4:
+      action: stop
+  target_group_ab_collect{num_remaining==2}:
+    group_ab_2:
+      action: play
+    group_ab_3:
+      action: stop
+  target_group_ab_collect{num_remaining==1}:
+    group_ab_1:
+      action: play
+    group_ab_2:
+      action: stop
+  target_group_ab_collect{num_remaining==0}:
+    group_ab_1:
+      action: stop
+  target_group_cd_collect{num_remaining==3}:
+    group_cd_3:
+      action: play
+    group_cd_4:
+      action: stop
+  target_group_cd_collect{num_remaining==2}:
+    group_cd_2:
+      action: play
+    group_cd_3:
+      action: stop
+  target_group_cd_collect{num_remaining==1}:
+    group_cd_1:
+      action: play
+    group_cd_2:
+      action: stop
+  target_group_cd_collect{num_remaining==0}:
+    group_cd_1:
+      action: stop
 
 shows:
   multiplier2:
@@ -100,17 +144,23 @@ shows:
     - duration: 100ms
       lights:
         l_collect_value_ab_1: on
+        l_collect_value_ab_2: off
+        l_collect_value_ab_3: off
+        l_collect_value_ab_4: off
   group_ab_2:
     - duration: 100ms
       lights:
         l_collect_value_ab_1: on
         l_collect_value_ab_2: on
+        l_collect_value_ab_3: off
+        l_collect_value_ab_4: off
   group_ab_3:
     - duration: 100ms
       lights:
         l_collect_value_ab_1: on
         l_collect_value_ab_2: on
         l_collect_value_ab_3: on
+        l_collect_value_ab_4: off
   group_ab_4:
     - duration: 100ms
       lights:
@@ -122,17 +172,23 @@ shows:
     - duration: 100ms
       lights:
         l_collect_value_cd_1: on
+        l_collect_value_cd_2: off
+        l_collect_value_cd_3: off
+        l_collect_value_cd_4: off
   group_cd_2:
     - duration: 100ms
       lights:
         l_collect_value_cd_1: on
         l_collect_value_cd_2: on
+        l_collect_value_cd_3: off
+        l_collect_value_cd_4: off
   group_cd_3:
     - duration: 100ms
       lights:
         l_collect_value_cd_1: on
         l_collect_value_cd_2: on
         l_collect_value_cd_3: on
+        l_collect_value_cd_4: off
   group_cd_4:
     - duration: 100ms
       lights:

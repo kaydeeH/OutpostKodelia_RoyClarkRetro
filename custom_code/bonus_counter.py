@@ -7,7 +7,6 @@ class BonusCounter(CustomCode):
 
     def on_load(self):
         self.info_log("BonusCountdown custom code started successfully.")
-        #Either collect_seismic or bonus_start can trigger a countdown.
         self.machine.events.add_handler('bonus_start', self._start_bonus_countdown)
         self.machine.events.add_handler('bonus_countdown_decrement', self._decrement_bonus, 1)
         self.machine.events.add_handler('flipper_cancel', self._speed_up_bonus)

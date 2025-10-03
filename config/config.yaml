@@ -1,4 +1,11 @@
 #config_version=6
+
+#Double bonus bug - if drops advance at different rates, it doesn't detect the double bonus state because some are already in the next shot state
+#Figure out special qualifier and payouts
+#Clean up / customize /implement settings
+#Add/adjust tilt logic
+#Add chime sounds throughout
+
 config:
   - assets.yaml
   - coils.yaml
@@ -37,6 +44,7 @@ modes:
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter
+  - custom_code.drop_collector.DropCollector
 
 game:
   balls_per_game: settings.balls_per_game

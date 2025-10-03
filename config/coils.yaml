@@ -31,12 +31,16 @@ coils:
   c_slingshot_right:
     number:
   c_drop_a:
+    pulse_events: shot_ro_l_hit
     number:
   c_drop_b:
+    pulse_events: shot_ro_top_1_hit
     number:
   c_drop_c:
+    pulse_events: shot_ro_top_3_hit
     number:
   c_drop_d:
+    pulse_events: shot_ro_r_hit
     number:
   c_knocker:
     number:
