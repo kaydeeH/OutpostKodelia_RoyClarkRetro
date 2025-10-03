@@ -1,0 +1,45 @@
+#config_version=6
+mode:
+  start_events: ball_started
+  priority: 100
+
+extra_balls:
+  base_extra_ball:
+    award_events: extra_ball_awarded
+    light_events: extra_ball_ready
+    enabled: true
+
+event_player:
+  drops_third_hits_complete{current_player.extra_ball_awarded==0}: extra_ball_ready
+  shot_ro_top_2_hit{current_player.extra_ball_ready==1}: extra_ball_awarded
+
+variable_player:
+  extra_ball_awarded:
+    extra_ball_awarded:
+      int: 1
+      action: set
+    extra_ball_ready:
+      int: 0
+      action: set
+  extra_ball_ready:
+    extra_ball_ready:
+      int: 1
+      action: set
+
+show_player:
+  extra_ball_ready: extra_lit
+  extra_ball_awarded:
+    extra_lit:
+      action: stop
+    play_again_lit:
+      action: play
+
+shows:
+  extra_lit:
+    - duration: 100ms
+      lights:
+        l_extraball_wl: on
+  play_again_lit:
+    - duration: 100ms
+      lights:
+        l_shoot_again: on

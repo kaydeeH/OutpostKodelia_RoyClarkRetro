@@ -42,6 +42,7 @@ modes:
   - base_standups
   - base_drops
   - base_special
+  - base_extraballs
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter
