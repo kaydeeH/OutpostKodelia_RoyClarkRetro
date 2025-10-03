@@ -19,3 +19,9 @@ player_vars:
   group_cd_value:
     value_type: int
     initial_value: 0
+  group_ab_special_ready:
+    value_type: int
+    initial_value: 0
+  group_cd_special_ready:
+    value_type: int
+    initial_value: 0

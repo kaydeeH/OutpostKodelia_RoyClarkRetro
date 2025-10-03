@@ -1,0 +1,59 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+variable_player:
+  target_group_ab_collected_full{current_player.group_ab_special_ready==0}:
+    group_ab_special_ready: 1
+  target_group_cd_collected_full{current_player.group_cd_special_ready==0}:
+    group_cd_special_ready: 1
+  finish_up_bonus:
+    group_ab_special_ready:
+      int: 0
+      action: set
+    group_cd_special_ready:
+      int: 0
+      action: set
+    special_ready:
+      int: 0
+      action: set
+  special_ready:
+    special_ready:
+      int: 1
+      action: set
+  shot_special_hit:
+    score: 500
+  shot_special_hit{current_player.special_ready==1}:
+    score: 50000
+    special_ready:
+      int: 0
+      action: set
+    group_ab_special_ready:
+      int: 0
+      action: set
+    group_cd_special_ready:
+      int: 0
+      action: set
+
+event_player:
+  target_group_ab_collected_full{current_player.group_cd_special_ready==1}: special_ready
+  target_group_cd_collected_full{current_player.group_ab_special_ready==1}: special_ready
+  shot_special_hit{current_player.special_ready==1}: special_not_ready
+
+show_player:
+  special_ready: lite_special
+  special_not_ready:
+    lite_special:
+      action: stop
+
+shows:
+  lite_special:
+    - duration: 100ms
+      lights:
+        l_special: on
+
+shots:
+  shot_special:
+    switch: s_special

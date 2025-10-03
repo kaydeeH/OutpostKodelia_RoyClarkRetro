@@ -11,12 +11,16 @@ class DropCollector(CustomCode):
 
     def _start_collect_ab(self, **kwargs):
         del kwargs
+        if self.machine.game.player.group_ab_value == 4:
+            self.machine.events.post('target_group_ab_collected_full')
         for i in range(self.machine.game.player.group_ab_value):
             global delay
             self.machine.delay.add(ms=delay*(i+1), callback=self._do_decrement_ab)
 
     def _start_collect_cd(self, **kwargs):
         del kwargs
+        if self.machine.game.player.group_cd_value == 4:
+            self.machine.events.post('target_group_cd_collected_full')
         for i in range(self.machine.game.player.group_cd_value):
             global delay
             self.machine.delay.add(ms=delay*(i+1), callback=self._do_decrement_cd)

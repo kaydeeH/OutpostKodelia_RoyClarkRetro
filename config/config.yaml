@@ -1,10 +1,10 @@
 #config_version=6
 
-#Double bonus bug - if drops advance at different rates, it doesn't detect the double bonus state because some are already in the next shot state
-#Figure out special qualifier and payouts
+#Figure out and implement Extra Ball
 #Clean up / customize /implement settings
 #Add/adjust tilt logic
 #Add chime sounds throughout
+#Add GI as lights so I can flash the PF during tilts and do other interesting things with the GI.
 
 config:
   - assets.yaml
@@ -24,7 +24,7 @@ config:
   - droptargets.yaml
 
 modes:
-# base modules
+# base modes
   - base
   - game
   - tilt
@@ -41,10 +41,12 @@ modes:
   - base_rollovers
   - base_standups
   - base_drops
+  - base_special
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter
   - custom_code.drop_collector.DropCollector
+  - custom_code.all_drop_watcher.AllDropWatcher
 
 game:
   balls_per_game: settings.balls_per_game

@@ -15,23 +15,23 @@ shots:
   shot_drop_a:
     switch: s_target_a
     profile: drops_profile
+    restart_events: finish_up_bonus
   shot_drop_b:
     switch: s_target_b
     profile: drops_profile
+    restart_events: finish_up_bonus
   shot_drop_c:
     switch: s_target_c
     profile: drops_profile
+    restart_events: finish_up_bonus
   shot_drop_d:
     switch: s_target_d
     profile: drops_profile
+    restart_events: finish_up_bonus
   shot_collect_ab:
     switch: s_collect_ab
   shot_collect_cd:
     switch: s_collect_cd
-
-shot_groups:
-  all_drops:
-    shots: shot_drop_a, shot_drop_b, shot_drop_c, shot_drop_d
 
 variable_player:
   shot_drop_a_hit:
@@ -46,11 +46,11 @@ variable_player:
   shot_drop_d_hit:
     score: 500
     group_cd_value: 1
-  all_drops_hit_once_complete:
+  drops_first_hits_complete:
     bonus_multiplier:
       int: 2
       action: set
-  all_drops_hit_twice_complete:
+  drops_second_hits_complete:
     bonus_multiplier:
       int: 3
       action: set

@@ -10,6 +10,7 @@ class BonusCounter(CustomCode):
         self.machine.events.add_handler('bonus_start', self._start_bonus_countdown)
         self.machine.events.add_handler('bonus_countdown_decrement', self._decrement_bonus, 1)
         self.machine.events.add_handler('flipper_cancel', self._speed_up_bonus)
+        self.machine.events.add_handler('bonus_countdown_decrement_mult_loop', self._decrement_bonus)
 
     def _start_bonus_countdown(self, **kwargs):
         del kwargs
@@ -42,6 +43,6 @@ class BonusCounter(CustomCode):
                 self.machine.game.player.bonus_multiplier -= 1
                 for i in range(initial_bonus):
                     self.machine.game.player.bonus_val += 1
-                self.machine.events.post('bonus_countdown_decrement')
+                self.machine.events.post('bonus_countdown_decrement_mult_loop')
             else:
                 self.machine.events.post('finish_up_bonus')
