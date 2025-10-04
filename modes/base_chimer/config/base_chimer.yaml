@@ -1,0 +1,54 @@
+#config_version=6
+
+mode:
+  start_events: ball_started
+  priority: 100
+
+shows:
+  low_chime:
+    - duration: 250ms
+      sounds: f_sharp_7
+      coils: c_chimes_low
+  mid_chime:
+    - duration: 250ms
+      sounds: g_sharp_7
+      coils: c_chimes_med
+  high_chime:
+    - duration: 250ms
+      sounds: a_sharp_7
+      coils: c_chimes_high
+
+show_player:
+  shot_10pt_su_hit:
+    high_chime:
+      loops: 0
+  shot_10pt_su_drops_hit:
+    high_chime:
+      loops: 0
+  shot_slingshot_left_hit:
+    high_chime:
+      loops: 0
+  shot_slingshot_right_hit:
+    high_chime:
+      loops: 0
+  shot_drop_a_hit:
+    low_chime:
+      loops: 4
+  shot_drop_b_hit:
+    low_chime:
+      loops: 4
+  shot_drop_c_hit:
+    low_chime:
+      loops: 4
+  shot_drop_d_hit:
+    low_chime:
+      loops: 4
+  shot_pop_left_hit:
+    mid_chime:
+      loops: 0
+  shot_pop_center_hit:
+    mid_chime:
+      loops: 0
+  shot_pop_right_hit:
+    mid_chime:
+      loops: 0

@@ -6,6 +6,9 @@ mode:
   events_when_started: base_is_setup
 
 show_player:
+  base_is_setup:
+    intro_song:
+      loops: 0
   mode_base_started: base_gi_show
   mode_base_started{ball==1}: ball1
   mode_base_started{ball==2}: ball2
@@ -174,6 +177,46 @@ shows:
     - duration: 100ms
       lights:
         l_bonus_10: on
+  intro_song:
+    - duration: 250ms
+      sounds: f_sharp_7
+      coils: c_chimes_low
+    - duration: 250ms
+      sounds: g_sharp_7
+      coils: c_chimes_med
+    - duration: 500ms
+      sounds: a_sharp_7
+      coils: c_chimes_high
+    - duration: 250ms
+      sounds: f_sharp_7
+      coils: c_chimes_low
+    - duration: 250ms
+      sounds: g_sharp_7
+      coils: c_chimes_med
+    - duration: 250ms
+      sounds: a_sharp_7
+      coils: c_chimes_high
+    - duration: 500ms
+      sounds: a_sharp_7
+      coils: c_chimes_high
+    - duration: 250ms
+      sounds: f_sharp_7
+      coils: c_chimes_low
+    - duration: 125ms
+      sounds: a_sharp_7
+      coils: c_chimes_high
+    - duration: 250ms
+      sounds: f_sharp_7
+      coils: c_chimes_low
+    - duration: 125ms
+      sounds: a_sharp_7
+      coils: c_chimes_high
+    - duration: 250ms
+      sounds: f_sharp_7
+      coils: c_chimes_low
+    - duration: 500ms
+      sounds: f_sharp_7
+      coils: c_chimes_low
 
 #This can't live in the 'bonus' mode because it's not running when the player tilts.
 variable_player:

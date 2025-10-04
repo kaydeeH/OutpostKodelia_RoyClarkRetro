@@ -1,7 +1,7 @@
 #config_version=6
 
 #Clean up / customize /implement settings
-#Add chime sounds throughout
+#Add more chime sounds
 
 config:
   - assets.yaml
@@ -39,6 +39,7 @@ modes:
   - base_drops
   - base_special
   - base_extraballs
+  - base_chimer
 
 custom_code:
   - custom_code.bonus_counter.BonusCounter
