@@ -8,9 +8,9 @@ mode_settings:
       score: 0
       player_score_entry: bonus_val
 
-sound_player:
-  bonus_countdown_decrement:
-    beep
+#sound_player:
+#  bonus_countdown_decrement:
+#    beep
 
 variable_player:
   bonus_countdown_decrement:

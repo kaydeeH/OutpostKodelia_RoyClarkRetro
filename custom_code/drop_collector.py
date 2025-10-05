@@ -1,6 +1,6 @@
 from mpf.core.custom_code import CustomCode
 
-delay = 150 # type: int()
+delay = 250 # type: int()
 
 class DropCollector(CustomCode):
 

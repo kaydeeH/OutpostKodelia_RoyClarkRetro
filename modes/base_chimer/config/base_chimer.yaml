@@ -33,16 +33,16 @@ show_player:
       loops: 0
   shot_drop_a_hit:
     low_chime:
-      loops: 4
+      loops: 1
   shot_drop_b_hit:
     low_chime:
-      loops: 4
+      loops: 1
   shot_drop_c_hit:
     low_chime:
-      loops: 4
+      loops: 1
   shot_drop_d_hit:
     low_chime:
-      loops: 4
+      loops: 1
   shot_pop_left_hit:
     mid_chime:
       loops: 0
@@ -50,5 +50,44 @@ show_player:
     mid_chime:
       loops: 0
   shot_pop_right_hit:
+    mid_chime:
+      loops: 0
+  target_group_ab_collect:
+    low_chime:
+      loops: 0
+  target_group_cd_collect:
+    low_chime:
+      loops: 0
+  bonus_countdown_decrement:
+    mid_chime:
+      loops: 0
+  bonus_countdown_decrement_mult_loop:
+    high_chime:
+      loops: 0
+  shot_ro_top_1_hit:
+    mid_chime:
+      loops: 0
+  shot_ro_top_2_hit:
+    low_chime:
+      loops: 0
+  shot_ro_top_3_hit:
+    mid_chime:
+      loops: 0
+  shot_ro_top_4_hit:
+    mid_chime:
+      loops: 0
+  shot_ro_l_hit:
+    mid_chime:
+      loops: 0
+  shot_ro_r_hit:
+    mid_chime:
+      loops: 0
+  shot_outlane_l_hit:
+    mid_chime:
+      loops: 0
+  shot_outlane_r_hit:
+    mid_chime:
+      loops: 0
+  shot_special_hit:
     mid_chime:
       loops: 0

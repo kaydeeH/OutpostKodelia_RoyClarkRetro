@@ -6,5 +6,8 @@ ball_devices:
     eject_coil: c_drain_eject
     tags: drain, home, trough
     eject_timeouts: 3s
+# Enable these only if needed in the production game.
+#    confirm_eject_type: switch
+#    confirm_eject_switch: s_plunger_lane
 
 virtual_platform_start_active_switches: s_drain
