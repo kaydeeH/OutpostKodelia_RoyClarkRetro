@@ -24,7 +24,7 @@ keyboard:
   r:
     switch:
   t:
-    switch:
+    switch: s_tilt
   y:
     switch:
   u:

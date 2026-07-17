@@ -13,20 +13,29 @@ segment_display_player:
     display_p1:
       text: "{players[0].score:d}"
       key: scores
-      color: black
+      #color: black
     display_p2:
       text: ""
       key: scores
-      color: black
+      #color: black
     display_credit:
-      text: ""
+      text: "{(machine.credits_whole_num):d}"
       key: scores
-      color: black
+      #color: black
+    display_tilt:
+      text: "{(current_player.tilt_warnings):d}W"
   player_added{num==2}:
     display_p2:
       text: "{players[1].score:d}"
       key: scores
-      color: black
+      #color: black
+
+  tilt_warning:
+    display_tilt:
+      text: "{(current_player.tilt_warnings):d}W"
+  tilt:
+    display_tilt:
+      text: "XX"
 
   #Remove scores when game ended.
   game_ended:
@@ -46,25 +55,162 @@ segment_display_player:
       text: "{players[0].score:d}"
       action: no_flash
       key: scores
-      color: black
+      #color: black
   player_score{player_num==2 and change>0}:
     display_p2:
       text: "{players[1].score:d}"
       action: no_flash
       key: scores
-      color: black
+      #color: black
 
-  #Flash displays when turns start.
+  #Update displays when turns start.
   #player_turn_started{number==1}:
   ball_will_start{player==1}:
     display_p1:
       text: "{players[0].score:d}"
       action: flash
       key: scores
-      color: black
+      #: black
+    display_tilt:
+      text: "{(current_player.tilt_warnings):d}W"
   ball_will_start{player==2}:
     display_p2:
       text: "{players[1].score:d}"
       action: flash
       key: scores
+      #color: black
+    display_tilt:
+      text: "{(current_player.tilt_warnings):d}W"
+
+widgets:
+  tilt_warning_widget:
+    - type: text
+      text: "Warning!"
+      font_name: rock
+      font_size: 55
+      bold: true
+      expire: 2s
+      anchor_x: center
+      anchor_y: center
+      x: 400
+      y: 240
+      z: 300
+      color: 74331b
+    - type: rectangle
+      anchor_x: center
+      anchor_y: center
+      x: 400
+      y: 240
+      z: 290
+      width: 255
+      height: 85
       color: black
+      opacity: .9
+      corner_radius: 10
+      expire: 2s
+  tilt_widget:
+    - type: text
+      text: "TILT"
+      font_name: rock
+      font_size: 55
+      bold: true
+      expire: 2s
+      anchor_x: center
+      anchor_y: center
+      x: 400
+      y: 240
+      z: 300
+      color: 74331b
+    - type: rectangle
+      anchor_x: center
+      anchor_y: center
+      x: 400
+      y: 240
+      z: 290
+      width: 180
+      height: 85
+      color: black
+      opacity: .9
+      corner_radius: 10
+      expire: 2s
+  w_ball1:
+    - type: image
+      image: RedBulb3
+      x: 303
+      y: 136
+      z: 180
+  w_ball2:
+    - type: image
+      image: RedBulb3
+      x: 351
+      y: 136
+      z: 180
+  w_ball3:
+    - type: image
+      image: RedBulb3
+      x: 400
+      y: 136
+      z: 180
+  w_ball4:
+    - type: image
+      image: RedBulb3
+      x: 448
+      y: 136
+      z: 180
+  w_ball5:
+    - type: image
+      image: RedBulb3
+      x: 496
+      y: 136
+      z: 180
+
+widget_player:
+  tilt_warning:
+    tilt_warning_widget:
+      slide: screen_segement_display
+      priority: 10
+  tilt:
+    tilt_widget:
+      slide: screen_segement_display
+      priority: 10
+  mode_base_started{ball==1}:
+    w_ball1:
+      slide: screen_segement_display
+      priority: 10
+  mode_base_started{ball==2}:
+    w_ball1:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
+    w_ball2:
+      slide: screen_segement_display
+      priority: 10
+  mode_base_started{ball==3}:
+    w_ball2:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
+    w_ball3:
+      slide: screen_segement_display
+      priority: 10
+  mode_base_started{ball==4}:
+    w_ball3:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
+    w_ball4:
+      slide: screen_segement_display
+      priority: 10
+  mode_base_started{ball==5}:
+    w_ball4:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
+    w_ball5:
+      slide: screen_segement_display
+      priority: 10
+  game_will_end:
+    w_ball5:
+      slide: screen_segement_display
+      priority: 10
+      action: remove

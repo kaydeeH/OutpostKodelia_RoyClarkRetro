@@ -4,40 +4,40 @@ tilt:
   settle_time: settings.settle_time
   warnings_to_tilt: settings.warnings_to_tilt
 
-show_player:
-  tilt_warning{current_player.tilt_warnings==1}:
-    tilt_flash:
-      loops: 0
-    tilt_gi_show:
-      loops: 0
-  tilt_warning{current_player.tilt_warnings==2}:
-    tilt_flash:
-      loops: 1
-    tilt_gi_show:
-      loops: 1
-  tilt:
-    tilt_on:
-      loops: -1
-    tilt_gi_off_show:
-      loops: -1
-  tilt_clear:
-    tilt_on:
-      action: stop
-    tilt_gi_off_show:
-      action: stop
-
-shows:
-  tilt_flash:
-    - duration: 250ms
-      lights:
-        l_tilt: on
-    - duration: 250ms
-      lights:
-        l_tilt: off
-  tilt_on:
-    - duration: 150ms
-      lights:
-        l_tilt: on
+#show_player:
+#  tilt_warning{current_player.tilt_warnings==1}:
+#    tilt_flash:
+#      loops: 0
+#    tilt_gi_show:
+#      loops: 0
+#  tilt_warning{current_player.tilt_warnings==2}:
+#    tilt_flash:
+#      loops: 1
+#    tilt_gi_show:
+#      loops: 1
+#  tilt:
+#    tilt_on:
+#      loops: -1
+#    tilt_gi_off_show:
+#      loops: -1
+#  tilt_clear:
+#    tilt_on:
+#      action: stop
+#    tilt_gi_off_show:
+#      action: stop
+#
+#shows:
+#  tilt_flash:
+#    - duration: 250ms
+#      lights:
+#        l_tilt: on
+#    - duration: 250ms
+#      lights:
+#        l_tilt: off
+#  tilt_on:
+#    - duration: 150ms
+#      lights:
+#        l_tilt: on
 
 sound_player:
   tilt_warning{current_player.tilt_warnings==1}: beep
@@ -47,3 +47,27 @@ sound_player:
   tilt:
     beep:
       loops: 2
+
+#slides:
+#  _overwrite: true   # this is important to overwrite the existing slides
+#  tilt_warning_1:
+#    background_color: ff000000
+#    widgets:
+#      - type: text
+#        text: "STOP IT"
+#    expire: 1s
+#  tilt_warning_2:
+#    background_color: ff000000
+#    widgets:
+#      - type: text
+#        text: "SERIOUSLY STOP IT"
+#    expire: 1s
+#  tilt:
+#    background_color: ff000000
+#    widgets:
+#      - type: text
+#        text: TILT
+#    expire: 1s
+
+slide_player:
+  _overwrite: true

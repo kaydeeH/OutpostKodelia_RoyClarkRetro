@@ -10,11 +10,11 @@ show_player:
     intro_song:
       loops: 0
   mode_base_started: base_gi_show
-  mode_base_started{ball==1}: ball1
-  mode_base_started{ball==2}: ball2
-  mode_base_started{ball==3}: ball3
-  mode_base_started{ball==4}: ball4
-  mode_base_started{ball==5}: ball5
+#  mode_base_started{ball==1}: ball1
+#  mode_base_started{ball==2}: ball2
+#  mode_base_started{ball==3}: ball3
+#  mode_base_started{ball==4}: ball4
+#  mode_base_started{ball==5}: ball5
   mode_base_started{player==1}:
     player_1:
       action: play
@@ -87,46 +87,46 @@ show_player:
       action: stop
 
 shows:
-  ball1:
-    - duration: 100ms
-      lights:
-        l_ball_1: on
-        l_ball_2: off
-        l_ball_3: off
-        l_ball_4: off
-        l_ball_5: off
-  ball2:
-    - duration: 100ms
-      lights:
-        l_ball_1: off
-        l_ball_2: on
-        l_ball_3: off
-        l_ball_4: off
-        l_ball_5: off
-  ball3:
-    - duration: 100ms
-      lights:
-        l_ball_1: off
-        l_ball_2: off
-        l_ball_3: on
-        l_ball_4: off
-        l_ball_5: off
-  ball4:
-    - duration: 100ms
-      lights:
-        l_ball_1: off
-        l_ball_2: off
-        l_ball_3: off
-        l_ball_4: on
-        l_ball_5: off
-  ball5:
-    - duration: 100ms
-      lights:
-        l_ball_1: off
-        l_ball_2: off
-        l_ball_3: off
-        l_ball_4: off
-        l_ball_5: on
+#  ball1:
+#    - duration: 100ms
+#      lights:
+#        l_ball_1: on
+#        l_ball_2: off
+#        l_ball_3: off
+#        l_ball_4: off
+#        l_ball_5: off
+#  ball2:
+#    - duration: 100ms
+#      lights:
+#        l_ball_1: off
+#        l_ball_2: on
+#        l_ball_3: off
+#        l_ball_4: off
+#        l_ball_5: off
+#  ball3:
+#    - duration: 100ms
+#      lights:
+#        l_ball_1: off
+#        l_ball_2: off
+#        l_ball_3: on
+#        l_ball_4: off
+#        l_ball_5: off
+#  ball4:
+#    - duration: 100ms
+#      lights:
+#        l_ball_1: off
+#        l_ball_2: off
+#        l_ball_3: off
+#        l_ball_4: on
+#        l_ball_5: off
+#  ball5:
+#    - duration: 100ms
+#      lights:
+#        l_ball_1: off
+#        l_ball_2: off
+#        l_ball_3: off
+#        l_ball_4: off
+#        l_ball_5: on
   player_1:
     - duration: 100ms
       lights:

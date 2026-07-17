@@ -15,78 +15,296 @@ segment_displays:
     size: 2
     number: 1
     default_transition_update_hz: 24
+  display_tilt:
+    size: 2
+    number: 1
+    default_transition_update_hz: 24
 
 # The remainder of this file sets up the screen display version of segment displays w/ backglass
 virtual_segment_display_connector:
-  segment_displays: display_p1, display_p2, display_credit
+  segment_displays: display_p1, display_p2, display_credit, display_tilt
 
 widgets:
-  backglass:
+  apron_display:
+    # static widgets
     - type: image
-      image: display_area
+      image: DisplayBackground
       z: 1
-  display_p1:
+    - type: text
+      text: "Roy Clark: The Entertainer"
+      font_name: SPHS
+      font_size: 65
+      bold: false
+      anchor_x: center
+      anchor_y: center
+      x: 400
+      y: 388
+      z: 190
+      color: black
+    - type: text
+      text: "PLAYER 1"
+      font_name: rock
+      font_size: 40
+      bold: false
+      anchor_x: center
+      anchor_y: center
+      x: 248
+      y: 335
+      z: 190
+      color: 74331b
+    - type: text
+      text: "PLAYER 2"
+      font_name: rock
+      font_size: 40
+      bold: false
+      anchor_x: center
+      anchor_y: center
+      x: 552
+      y: 335
+      z: 190
+      color: 74331b
+    - type: rectangle
+      anchor_x: center
+      anchor_y: center
+      x: 248
+      y: 260
+      z: 190
+      width: 255
+      height: 85
+      color: black
+      corner_radius: 10
+    - type: image
+      image: BrownBox
+      anchor_x: center
+      anchor_y: center
+      x: 248
+      y: 260
+      z: 170
+    - type: rectangle
+      anchor_x: center
+      anchor_y: center
+      x: 552
+      y: 260
+      z: 170
+      width: 255
+      height: 85
+      color: black
+      corner_radius: 10
+    - type: image
+      image: BrownBox
+      anchor_x: center
+      anchor_y: center
+      x: 552
+      y: 260
+      z: 170
+    - type: text
+      text: "BALL IN PLAY"
+      font_name: rock
+      font_size: 30
+      bold: false
+      anchor_x: center
+      anchor_y: center
+      x: 400
+      y: 170
+      z: 190
+      color: 74331b
+    - type: image
+      image: ArrowLeft
+      anchor_x: right
+      anchor_y: center
+      x: 300
+      y: 170
+      z: 190
+      scale: .15
+    - type: image
+      image: ArrowLeft
+      anchor_x: left
+      anchor_y: center
+      x: 618
+      y: 170
+      z: 190
+      scale: .15
+      rotation: 180
+    - type: text
+      text: "1    2    3    4    5"
+      font_name: rock
+      font_size: 30
+      bold: false
+      anchor_x: center
+      anchor_y: center
+      x: 400
+      y: 100
+      z: 190
+      color: 74331b
+    - type: ellipse
+      x: 400
+      y: 135
+      z: 170
+      width: 30
+      height: 30
+      color: black
+    - type: ellipse
+      x: 351
+      y: 135
+      z: 170
+      width: 30
+      height: 30
+      color: black
+    - type: ellipse
+      x: 303
+      y: 135
+      z: 170
+      width: 30
+      height: 30
+      color: black
+    - type: ellipse
+      x: 448
+      y: 135
+      z: 170
+      width: 30
+      height: 30
+      color: black
+    - type: ellipse
+      x: 496
+      y: 135
+      z: 170
+      width: 30
+      height: 30
+      color: black
+    - type: text
+      text: "CREDITS"
+      font_name: rock
+      font_size: 25
+      bold: false
+      anchor_x: center
+      anchor_y: center
+      x: 180
+      y: 150
+      z: 190
+      color: 74331b
+    - type: rectangle
+      anchor_x: center
+      anchor_y: center
+      x: 180
+      y: 100
+      z: 190
+      width: 80
+      height: 60
+      color: black
+      corner_radius: 15
+    - type: text
+      text: "TILT"
+      font_name: rock
+      font_size: 25
+      bold: false
+      anchor_x: center
+      anchor_y: center
+      x: 620
+      y: 150
+      z: 190
+      color: 74331b
+    - type: rectangle
+      anchor_x: center
+      anchor_y: center
+      x: 620
+      y: 100
+      z: 190
+      width: 80
+      height: 60
+      color: black
+      corner_radius: 15
+    # segment widgets
     - type: segment_display_emulator
       name: display_p1
-      display_type: 7seg
+      display_type: 14seg
       character_count: 6
       padding: 0
       character_spacing: 10
-      segment_width: 0.1
+      character_slant_angle: 5
+      segment_width: 0.15
       segment_interval: .02
-      segment_off_color: ffffffff
-      segment_on_color: 000000ff
-      side_bevel_enabled: false
-      background_color: ffffffff
+      segment_off_color: ff000000
+      segment_on_color: d37f2cff
+      side_bevel_enabled: true
+      background_color: 000000ff
       dot_enabled: false
       comma_enabled: false
       text: "888888"
-      width: 185
-      height: 25
-      x: 385
-      y: 248
+      width: 210
+      height: 50
+      anchor_x: center
+      anchor_y: center
+      x: 248
+      y: 260
       z: 200
-  display_p2:
     - type: segment_display_emulator
       name: display_p2
-      display_type: 7seg
+      display_type: 14seg
       character_count: 6
       padding: 0
       character_spacing: 10
-      segment_width: 0.1
+      character_slant_angle: 5
+      segment_width: 0.15
       segment_interval: .02
-      segment_off_color: ffffffff
-      segment_on_color: 000000ff
-      side_bevel_enabled: false
-      background_color: ffffffff
+      segment_off_color: ff000000
+      segment_on_color: d37f2c99
+      side_bevel_enabled: true
+      background_color: 000000ff
       dot_enabled: false
       comma_enabled: false
       text: "888888"
-      width: 185
-      height: 25
-      x: 770
-      y: 248
+      width: 210
+      height: 50
+      anchor_x: center
+      anchor_y: center
+      x: 552
+      y: 260
       z: 200
-  display_credit:
     - type: segment_display_emulator
       name: display_credit
-      display_type: 7seg
+      display_type: 14seg
       character_count: 2
       padding: 0
       character_spacing: 10
-      segment_width: 0.1
+      character_slant_angle: 5
+      segment_width: 0.15
       segment_interval: .02
-      segment_off_color: ffffffff
-      segment_on_color: 000000ff
-      side_bevel_enabled: false
-      background_color: ffffffff
+      segment_off_color: 000000FF
+      segment_on_color: d37f2cff
+      side_bevel_enabled: true
+      background_color: 000000ff
       dot_enabled: false
       comma_enabled: false
       text: "88"
-      width: 43
-      height: 22
-      x: 150
-      y: 400
+      width: 50
+      height: 35
+      anchor_x: center
+      anchor_y: center
+      x: 180
+      y: 100
+      z: 200
+    - type: segment_display_emulator
+      name: display_tilt
+      display_type: 14seg
+      character_count: 2
+      padding: 0
+      character_spacing: 10
+      character_slant_angle: 5
+      segment_width: 0.15
+      segment_interval: .02
+      segment_off_color: 000000FF
+      segment_on_color: d37f2cff
+      side_bevel_enabled: true
+      background_color: 000000ff
+      dot_enabled: false
+      comma_enabled: false
+      text: "88"
+      width: 50
+      height: 35
+      anchor_x: center
+      anchor_y: center
+      x: 620
+      y: 100
       z: 200
 
 slides:
@@ -97,15 +315,6 @@ slide_player:
 
 widget_player:
   displays_init_done:
-    backglass:
-      slide: screen_segement_display
-      priority: 10
-    display_p1:
-      slide: screen_segement_display
-      priority: 10
-    display_p2:
-      slide: screen_segement_display
-      priority: 10
-    display_credit:
+    apron_display:
       slide: screen_segement_display
       priority: 10

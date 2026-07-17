@@ -8,7 +8,7 @@ event_player:
 timers:
   display_loop_timer:
     start_value: 0
-    end_value: 6
+    end_value: 9
     tick_interval: 1s
     restart_on_complete: true
     direction: up
@@ -21,29 +21,54 @@ timers:
 segment_display_player:
   timer_display_loop_timer_tick{ticks==2}:
     display_p1:
-      text: "{(machine.player1_score):d}"
-      color: black
+      text: " GAME "
+      color: d37f2cff
       key: attr
     display_p2:
-      text: "{(machine.player2_score):d}"
-      color: black
+      text: " OVER "
+      color: d37f2cff
       key: attr
     display_credit:
       text: "{(machine.credits_whole_num):d}"
-      color: black
+      color: d37f2cff
+      key: attr
+    display_tilt:
+      text: "--"
+      color: d37f2cff
       key: attr
   timer_display_loop_timer_tick{ticks==5}:
     display_p1:
-      text: " HIGH "
-      color: black
+      text: "{(machine.player1_score):d}"
+      color: d37f2cff
       key: attr
     display_p2:
-      text: "{(machine.score1_value):d}"
-      color: black
+      text: "{(machine.player2_score):d}"
+      color: d37f2cff
       key: attr
     display_credit:
       text: "{(machine.credits_whole_num):d}"
-      color: black
+      color: d37f2cff
+      key: attr
+    display_tilt:
+      text: "--"
+      color: d37f2cff
+      key: attr
+  timer_display_loop_timer_tick{ticks==8}:
+    display_p1:
+      text: "HI SCR"
+      color: d37f2cff
+      key: attr
+    display_p2:
+      text: "{(machine.score1_value):d}"
+      color: d37f2cff
+      key: attr
+    display_credit:
+      text: "{(machine.credits_whole_num):d}"
+      color: d37f2cff
+      key: attr
+    display_tilt:
+      text: "--"
+      color: d37f2cff
       key: attr
 
 show_player:
