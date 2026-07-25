@@ -29,7 +29,7 @@ widgets:
     # static widgets
     - type: image
       image: DisplayBackground
-      z: 1
+      z: 100
     - type: text
       text: "Roy Clark: The Entertainer"
       font_name: SPHS
@@ -126,50 +126,50 @@ widgets:
       scale: .15
       rotation: 180
     - type: text
-      text: "1    2    3    4    5"
+      text: "1      2      3      4      5"
       font_name: rock
       font_size: 30
       bold: false
       anchor_x: center
       anchor_y: center
       x: 400
-      y: 100
+      y: 80
       z: 190
       color: 74331b
     - type: ellipse
       x: 400
-      y: 135
+      y: 125
       z: 170
-      width: 30
-      height: 30
+      width: 50
+      height: 50
       color: black
     - type: ellipse
-      x: 351
-      y: 135
+      x: 336
+      y: 125
       z: 170
-      width: 30
-      height: 30
+      width: 50
+      height: 50
       color: black
     - type: ellipse
-      x: 303
-      y: 135
+      x: 272
+      y: 125
       z: 170
-      width: 30
-      height: 30
+      width: 50
+      height: 50
       color: black
     - type: ellipse
-      x: 448
-      y: 135
+      x: 463
+      y: 125
       z: 170
-      width: 30
-      height: 30
+      width: 50
+      height: 50
       color: black
     - type: ellipse
-      x: 496
-      y: 135
+      x: 527
+      y: 125
       z: 170
-      width: 30
-      height: 30
+      width: 50
+      height: 50
       color: black
     - type: text
       text: "CREDITS"

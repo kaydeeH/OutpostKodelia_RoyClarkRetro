@@ -10,7 +10,7 @@ sound_system:
     music:
       type: standard
       simultaneous_sounds: 1
-      volume: .6
+      volume: .8
     voice:
       type: standard
       simultaneous_sounds: 1
@@ -20,6 +20,35 @@ sound_system:
       simultaneous_sounds: 8
       volume: 0.8
 
+sound_pools:
+  song_pool:
+    type: random_force_all
+    track: music
+    simultaneous_limit: 1
+    sounds:
+      - Yesterday
+      - LiveWithMe
+      - TipsOfMyFingers
+      - RightOrLeft
+      - OverAgain
+      - Dream
+
 sounds:
-  beep:
-    file: beep-01a.wav
+  Yesterday:
+    track: music
+    events_when_stopped: song_ended
+  LiveWithMe:
+    track: music
+    events_when_stopped: song_ended
+  TipsOfMyFingers:
+    track: music
+    events_when_stopped: song_ended
+  RightOrLeft:
+    track: music
+    events_when_stopped: song_ended
+  OverAgain:
+    track: music
+    events_when_stopped: song_ended
+  Dream:
+    track: music
+    events_when_stopped: song_ended

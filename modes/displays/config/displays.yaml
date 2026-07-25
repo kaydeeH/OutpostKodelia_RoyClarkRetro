@@ -135,33 +135,33 @@ widgets:
       expire: 2s
   w_ball1:
     - type: image
-      image: RedBulb3
-      x: 303
-      y: 136
+      image: RedBulbBig
+      x: 272
+      y: 123
       z: 180
   w_ball2:
     - type: image
-      image: RedBulb3
-      x: 351
-      y: 136
+      image: RedBulbBig
+      x: 334
+      y: 124
       z: 180
   w_ball3:
     - type: image
-      image: RedBulb3
-      x: 400
-      y: 136
+      image: RedBulbBig
+      x: 402
+      y: 125
       z: 180
   w_ball4:
     - type: image
-      image: RedBulb3
-      x: 448
-      y: 136
+      image: RedBulbBig
+      x: 462
+      y: 127
       z: 180
   w_ball5:
     - type: image
-      image: RedBulb3
-      x: 496
-      y: 136
+      image: RedBulbBig
+      x: 525
+      y: 126
       z: 180
 
 widget_player:

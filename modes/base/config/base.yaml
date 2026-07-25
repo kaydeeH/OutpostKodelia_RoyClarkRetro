@@ -5,6 +5,21 @@ mode:
   priority: 100
   events_when_started: base_is_setup
 
+sound_player:
+  base_is_setup:
+    song_pool:
+      action: play
+      loops: 0
+      delay: 3.7s
+  song_ended:
+    song_pool:
+      action: play
+      loops: 0
+      delay: 1s
+  ball_ending:
+    song_pool:
+      action: stop
+
 show_player:
   base_is_setup:
     intro_song:
