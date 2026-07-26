@@ -52,6 +52,13 @@ widgets:
       y: 335
       z: 190
       color: 74331b
+    - type: ellipse
+      x: 130
+      y: 335
+      z: 170
+      width: 50
+      height: 50
+      color: black
     - type: text
       text: "PLAYER 2"
       font_name: rock
@@ -63,6 +70,13 @@ widgets:
       y: 335
       z: 190
       color: 74331b
+    - type: ellipse
+      x: 434
+      y: 335
+      z: 170
+      width: 50
+      height: 50
+      color: black
     - type: rectangle
       anchor_x: center
       anchor_y: center
@@ -247,7 +261,7 @@ widgets:
       segment_width: 0.15
       segment_interval: .02
       segment_off_color: ff000000
-      segment_on_color: d37f2c99
+      segment_on_color: d37f2cff
       side_bevel_enabled: true
       background_color: 000000ff
       dot_enabled: false

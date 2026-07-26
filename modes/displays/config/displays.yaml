@@ -7,28 +7,31 @@ mode:
   priority: 5
   game_mode: false
 
+event_player:
+  ball_will_start{player==1}:
+    - player_1_active
+
+  ball_will_start{player==2}:
+    - player_2_active
+
 segment_display_player:
   #Add players to displays when they are added to the game.
   player_added{num==1}:
     display_p1:
       text: "{players[0].score:d}"
       key: scores
-      #color: black
     display_p2:
       text: ""
       key: scores
-      #color: black
     display_credit:
       text: "{(machine.credits_whole_num):d}"
       key: scores
-      #color: black
     display_tilt:
       text: "{(current_player.tilt_warnings):d}W"
   player_added{num==2}:
     display_p2:
       text: "{players[1].score:d}"
       key: scores
-      #color: black
 
   tilt_warning:
     display_tilt:
@@ -55,13 +58,11 @@ segment_display_player:
       text: "{players[0].score:d}"
       action: no_flash
       key: scores
-      #color: black
   player_score{player_num==2 and change>0}:
     display_p2:
       text: "{players[1].score:d}"
       action: no_flash
       key: scores
-      #color: black
 
   #Update displays when turns start.
   #player_turn_started{number==1}:
@@ -70,7 +71,6 @@ segment_display_player:
       text: "{players[0].score:d}"
       action: flash
       key: scores
-      #: black
     display_tilt:
       text: "{(current_player.tilt_warnings):d}W"
   ball_will_start{player==2}:
@@ -78,7 +78,6 @@ segment_display_player:
       text: "{players[1].score:d}"
       action: flash
       key: scores
-      #color: black
     display_tilt:
       text: "{(current_player.tilt_warnings):d}W"
 
@@ -163,6 +162,38 @@ widgets:
       x: 525
       y: 126
       z: 180
+  w_p1:
+    - type: image
+      image: RedBulbBig
+      x: 130
+      y: 335
+      z: 180
+      opacity: 0
+      animations:
+        player_1_active:
+          property: opacity
+          value: 1
+          duration: 10ms
+        player_2_active:
+          property: opacity
+          value: 0
+          duration: 50ms
+  w_p2:
+    - type: image
+      image: RedBulbBig
+      x: 434
+      y: 335
+      z: 180
+      opacity: 0
+      animations:
+        player_2_active:
+          property: opacity
+          value: 1
+          duration: 10ms
+        player_1_active:
+          property: opacity
+          value: 0
+          duration: 50ms
 
 widget_player:
   tilt_warning:
@@ -209,6 +240,15 @@ widget_player:
     w_ball5:
       slide: screen_segement_display
       priority: 10
+  mode_game_started:
+    w_p1:
+      slide: screen_segement_display
+      priority: 10
+      action: add
+    w_p2:
+      slide: screen_segement_display
+      priority: 10
+      action: add
   game_will_end:
     w_ball5:
       slide: screen_segement_display
