@@ -10,9 +10,18 @@ mode:
 event_player:
   ball_will_start{player==1}:
     - player_1_active
-
   ball_will_start{player==2}:
     - player_2_active
+  mode_base_started{ball==1}:
+    - lite_ball_1
+  mode_base_started{ball==2}:
+    - lite_ball_2
+  mode_base_started{ball==3}:
+    - lite_ball_3
+  mode_base_started{ball==4}:
+    - lite_ball_4
+  mode_base_started{ball==5}:
+    - lite_ball_5
 
 segment_display_player:
   #Add players to displays when they are added to the game.
@@ -135,33 +144,79 @@ widgets:
   w_ball1:
     - type: image
       image: RedBulbBig
+      opacity: 0
       x: 272
       y: 123
       z: 180
+      animations:
+        lite_ball_1:
+          property: opacity
+          value: 1
+          duration: 10ms
+        lite_ball_2:
+          property: opacity
+          value: 0
+          duration: 50ms
   w_ball2:
     - type: image
       image: RedBulbBig
+      opacity: 0
       x: 334
       y: 124
       z: 180
+      animations:
+        lite_ball_2:
+          property: opacity
+          value: 1
+          duration: 10ms
+        lite_ball_3:
+          property: opacity
+          value: 0
+          duration: 50ms
   w_ball3:
     - type: image
       image: RedBulbBig
+      opacity: 0
       x: 402
       y: 125
       z: 180
+      animations:
+        lite_ball_3:
+          property: opacity
+          value: 1
+          duration: 10ms
+        lite_ball_4:
+          property: opacity
+          value: 0
+          duration: 50ms
   w_ball4:
     - type: image
       image: RedBulbBig
+      opacity: 0
       x: 462
       y: 127
       z: 180
+      animations:
+        lite_ball_4:
+          property: opacity
+          value: 1
+          duration: 10ms
+        lite_ball_5:
+          property: opacity
+          value: 0
+          duration: 50ms
   w_ball5:
     - type: image
       image: RedBulbBig
+      opacity: 0
       x: 525
       y: 126
       z: 180
+      animations:
+        lite_ball_5:
+          property: opacity
+          value: 1
+          duration: 10ms
   w_p1:
     - type: image
       image: RedBulbBig
@@ -204,42 +259,42 @@ widget_player:
     tilt_widget:
       slide: screen_segement_display
       priority: 10
-  mode_base_started{ball==1}:
-    w_ball1:
-      slide: screen_segement_display
-      priority: 10
-  mode_base_started{ball==2}:
-    w_ball1:
-      slide: screen_segement_display
-      priority: 10
-      action: remove
-    w_ball2:
-      slide: screen_segement_display
-      priority: 10
-  mode_base_started{ball==3}:
-    w_ball2:
-      slide: screen_segement_display
-      priority: 10
-      action: remove
-    w_ball3:
-      slide: screen_segement_display
-      priority: 10
-  mode_base_started{ball==4}:
-    w_ball3:
-      slide: screen_segement_display
-      priority: 10
-      action: remove
-    w_ball4:
-      slide: screen_segement_display
-      priority: 10
-  mode_base_started{ball==5}:
-    w_ball4:
-      slide: screen_segement_display
-      priority: 10
-      action: remove
-    w_ball5:
-      slide: screen_segement_display
-      priority: 10
+#  mode_base_started{ball==1}:
+#    w_ball1:
+#      slide: screen_segement_display
+#      priority: 10
+#  mode_base_started{ball==2}:
+#    w_ball1:
+#      slide: screen_segement_display
+#      priority: 10
+#      action: remove
+#    w_ball2:
+#      slide: screen_segement_display
+#      priority: 10
+#  mode_base_started{ball==3}:
+#    w_ball2:
+#      slide: screen_segement_display
+#      priority: 10
+#      action: remove
+#    w_ball3:
+#      slide: screen_segement_display
+#      priority: 10
+#  mode_base_started{ball==4}:
+#    w_ball3:
+#      slide: screen_segement_display
+#      priority: 10
+#      action: remove
+#    w_ball4:
+#      slide: screen_segement_display
+#      priority: 10
+#  mode_base_started{ball==5}:
+#    w_ball4:
+#      slide: screen_segement_display
+#      priority: 10
+#      action: remove
+#    w_ball5:
+#      slide: screen_segement_display
+#      priority: 10
   mode_game_started:
     w_p1:
       slide: screen_segement_display
@@ -249,7 +304,51 @@ widget_player:
       slide: screen_segement_display
       priority: 10
       action: add
+    w_ball1:
+      slide: screen_segement_display
+      priority: 10
+      action: add
+    w_ball2:
+      slide: screen_segement_display
+      priority: 10
+      action: add
+    w_ball3:
+      slide: screen_segement_display
+      priority: 10
+      action: add
+    w_ball4:
+      slide: screen_segement_display
+      priority: 10
+      action: add
+    w_ball5:
+      slide: screen_segement_display
+      priority: 10
+      action: add
   game_will_end:
+    w_p1:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
+    w_p2:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
+    w_ball1:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
+    w_ball2:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
+    w_ball3:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
+    w_ball4:
+      slide: screen_segement_display
+      priority: 10
+      action: remove
     w_ball5:
       slide: screen_segement_display
       priority: 10
