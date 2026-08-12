@@ -48,12 +48,12 @@ widgets:
       bold: false
       anchor_x: center
       anchor_y: center
-      x: 248
+      x: 258
       y: 335
       z: 190
       color: 74331b
     - type: ellipse
-      x: 130
+      x: 140
       y: 335
       z: 170
       width: 50
@@ -66,12 +66,12 @@ widgets:
       bold: false
       anchor_x: center
       anchor_y: center
-      x: 552
+      x: 562
       y: 335
       z: 190
       color: 74331b
     - type: ellipse
-      x: 434
+      x: 444
       y: 335
       z: 170
       width: 50
@@ -81,7 +81,7 @@ widgets:
       anchor_x: center
       anchor_y: center
       x: 248
-      y: 260
+      y: 250
       z: 190
       width: 255
       height: 85
@@ -92,13 +92,13 @@ widgets:
       anchor_x: center
       anchor_y: center
       x: 248
-      y: 260
+      y: 250
       z: 170
     - type: rectangle
       anchor_x: center
       anchor_y: center
       x: 552
-      y: 260
+      y: 250
       z: 170
       width: 255
       height: 85
@@ -109,7 +109,7 @@ widgets:
       anchor_x: center
       anchor_y: center
       x: 552
-      y: 260
+      y: 250
       z: 170
     - type: text
       text: "BALL IN PLAY"
@@ -249,7 +249,7 @@ widgets:
       anchor_x: center
       anchor_y: center
       x: 248
-      y: 260
+      y: 250
       z: 200
     - type: segment_display_emulator
       name: display_p2
@@ -272,7 +272,7 @@ widgets:
       anchor_x: center
       anchor_y: center
       x: 552
-      y: 260
+      y: 250
       z: 200
     - type: segment_display_emulator
       name: display_credit

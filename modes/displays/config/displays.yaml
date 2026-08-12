@@ -220,7 +220,7 @@ widgets:
   w_p1:
     - type: image
       image: RedBulbBig
-      x: 130
+      x: 140
       y: 335
       z: 180
       opacity: 0
@@ -236,7 +236,7 @@ widgets:
   w_p2:
     - type: image
       image: RedBulbBig
-      x: 434
+      x: 444
       y: 335
       z: 180
       opacity: 0
